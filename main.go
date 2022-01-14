@@ -34,9 +34,9 @@ func main() {
 	router.POST("/sinucaevents", postSinucaEvents)
 
 	// Start server with HTTPS TLS:
-	router.RunTLS("localhost:443", "./data/server.crt", "./data/server.key")
+	//router.RunTLS("localhost:8443", "./data/server.crt", "./data/server.key")
 	// Start server with HTTP:
-	//router.Run("localhost:80")
+	router.Run("localhost:8080")
 }
 
 // getSinucaEvents responds with the list of all sinucaEvents as JSON.
